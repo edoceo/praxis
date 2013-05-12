@@ -1,0 +1,59 @@
+#
+# edoceo/element /etc/portage/package.use
+#
+# A set of tuned USE flags to create the Element X system
+#
+# $Id$
+#
+
+app-crypt/pinentry -qt4
+
+app-emulation/virtualbox -headless qt4 opengl vnc
+
+app-text/ghostscript-gpl X cairo gtk
+app-text/poppler cairo
+
+dev-java/sun-jre-bin X alsa nsplugin odbc
+
+gnome-extra/nm-applet -gnome
+
+media-gfx/gimp aalib curl exif jpeg lcms mmx mng pdf png python smp sse svg tiff -webkit wmf
+media-gfx/imagemagick X -autotrace bzip2 corefonts cxx -djvu -fftw -fontconfig -fpx -graphviz -gs -hdri -jbig jpeg -jpeg2k lcms -lqr lzma -opencl -openexr openmp perl png -q32 -q64 -q8 -raw -static-libs svg tiff truetype webp -wmf xml zlib
+
+media-libs/freetype X kpathsea
+media-libs/gd fontconfig
+media-libs/mediastreamer video
+
+media-video/ffmpeg X
+media-video/mjpegtools dga dv quicktime v4l yv12
+media-video/mplayer X dvb -oss pnm pvrspeex sse sse2 ssse3 v4l v4l2
+media-video/recordmydesktop alsa
+media-video/vlc X -a52 -aac -aalib alsa cdda cddax cddb cdio dc1394 -dirac -directfb -dts dvb dvd -esd -fbcon ffmpeg flac -fluidsynth -ggi -gnome -hal -httpd id3tag -jack -kate -libass -libcaca libgcrypt libnotify -libsysfs -libv4l2 -lirc live -lua -matroska mmx -modplug mp3 mpeg -musepack ncurses -nsplugin ogg opengl -optimisememory -pda png -pulseaudio pvr qt4 remoteosd -rtsp -run-as-root -samba -schroedinger sdl -sdl-image -seamonkey shout skins -speex sse stream -svg -svga -taglib theora truetype -twolame udev -upnp -v4l v4l2 -vcdinfo -vcdx -vlm vorbis -win32codecs x264 -xinerama xml xosd xv -zvbi
+
+net-analyzer/nmap gtk
+
+net-im/pidgin gnutls
+
+net-misc/networkmanager dhcpcd resolvconf
+
+net-print/cups X avahi dbus -ldap ppds -python -samba -zeroconf
+
+sys-apps/dbus X
+
+sys-auth/consolekit policykit
+
+x11-apps/xinit minimal
+
+x11-libs/cairo -qt4 X
+x11-libs/pango X
+x11-libs/qt-core -qt3support
+x11-libs/qt-gui -qt3support
+x11-libs/qt-opengl -qt3support
+x11-libs/qt-sql -qt3support
+
+x11-misc/slim -branding
+x11-misc/x11vnc avahi threads v4l
+
+xfce-base/xfce4-meta minimal
+
+xfce-extra/tumbler ffmpeg jpeg pdf

@@ -1,0 +1,5 @@
+# Gentoo Parent
+../../default/linux/amd64/13.0/no-multilib
+
+# Element Parent
+../praxis

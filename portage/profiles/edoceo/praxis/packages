@@ -1,0 +1,35 @@
+#
+# edoceo/praxis system packages
+#  Add this list of packages to the profile
+#
+
+*app-admin/procinfo
+*app-admin/syslog-ng
+*app-arch/lzop
+*app-backup/rdiff-backup
+*app-editors/hexedit
+*app-editors/nano
+*app-portage/portage-utils
+*dev-util/strace
+*dev-vcs/git
+*net-analyzer/mtr
+*net-analyzer/nmap
+*net-analyzer/traceroute
+*net-dns/bind-tools
+*net-firewall/iptables
+*net-misc/curl
+*net-misc/dhcpcd
+*net-misc/openntpd
+*net-misc/stunnel
+*sys-apps/ack
+# *sys-apps/iproute2   # this is the one that contains `ss`
+*sys-apps/less
+*sys-apps/pciutils
+*sys-apps/mlocate
+*sys-apps/usbutils
+*sys-boot/syslinux
+*sys-kernel/module-rebuild
+*sys-process/fcron
+*sys-process/lsof
+*sys-process/time
+*sys-power/acpid

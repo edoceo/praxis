@@ -1,0 +1,26 @@
+#
+# edoceo/element /etc/portage/package.keywords
+#
+# Version: 2009.12
+#
+# Allow these packages past the masking
+#   that uses portage ARCH to block (~x86, etc) 
+# Should only do this one specific package (=) and avoid (>=)
+# 
+# Format:
+# [ package atom ] [ arch ]
+#
+# @note Appears this file is read but not used?  Can't make it trigger like /etc/portage/package.keywords /djb 20100517.0242
+#
+
+# new KVM on all
+app-emulation/qemu-kvm
+
+# Enable this caseu this product is the new Nessus
+net-analyzer/openvas
+net-analyzer/openvas-client
+net-analyzer/openvas-libnasl
+net-analyzer/openvas-libraries
+net-analyzer/openvas-plugins
+net-analyzer/openvas-server
+

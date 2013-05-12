@@ -1,0 +1,27 @@
+#
+# edoceo/element packages
+#  Add this list of packages to the profile
+#
+
+*app-admin/procinfo
+*app-admin/syslog-ng
+*app-backup/rdiff-backup
+*app-editors/hexedit
+*app-portage/portage-utils
+*dev-util/strace
+*net-analyzer/nmap
+*net-analyzer/traceroute
+*net-dns/bind-tools
+*net-firewall/iptables
+*net-misc/curl
+*net-misc/dhcpcd
+*net-misc/stunnel
+*sys-apps/ack
+*sys-apps/pciutils
+*sys-apps/mlocate
+*sys-apps/usbutils
+*sys-boot/syslinux
+*sys-kernel/module-rebuild
+*sys-process/fcron
+*sys-process/lsof
+*sys-process/time

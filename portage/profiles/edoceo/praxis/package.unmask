@@ -1,0 +1,16 @@
+#
+# edoceo/element /etc/portage/package.unmask
+#
+# @see http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=3&chap=3#doc_chap3
+#
+# List packages that should be unblocked
+#
+#  When a package has been masked by the Gentoo developers and you still want
+#  to use it despite the reason mentioned in the package.mask file (situated
+#  in /usr/portage/profiles by default), add the exact same line in the
+#  /etc/portage/package.unmask file (or in a file in that directory if it is
+#  a directory). 
+
+<www-client/chromium-15
+
+=x11-drivers/nvidia-drivers-275.21

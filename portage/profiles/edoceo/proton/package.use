@@ -1,0 +1,195 @@
+#
+# edoceo/element /etc/portage/package.use
+#
+# A set of tuned USE flags to create the Element baseline system
+#
+# $Id$
+#
+
+app-accessibility/festival alsa
+
+app-admin/eselect -bash-completion
+app-admin/sudo ldap pam
+app-admin/syslog-ng ipv6 pcre spoof-source -sql -tcpd
+app-admin/testdisk ntfs jpeg -reiserfs
+
+app-antivirus/clamav clamdtop
+
+app-backup/rdiff-backup acl xattr
+
+app-editors/nano ncurses spell
+
+app-emulation/emul-linux-x86-xlibs opengl
+app-emulation/qemu-softmmu kqemu
+
+app-misc/screen multiuser
+app-misc/sphinx id64 postgres stemmer
+
+app-portage/layman git subversion -test
+
+app-text/aspell -gpm
+app-text/lcdf-typetools kpathsea
+
+dev-db/libpq pam pg-intdatetime readline ssl threads zlib
+dev-db/mysql berkdb big-tables cluster -max-idx-128
+# @note maybe need to not have threads on amd64?
+dev-db/postgresql ldap pam pg-heir pg-intdatetime readline ssl -threads xml zlib
+dev-db/postgresql-base ldap pam pg-heir pg-intdatetime readline ssl -threads zlib
+dev-db/postgresql-server perl python uuid xml
+dev-db/sqlite extensions secure-delete soundex threadsafe
+
+dev-lang/erlang smp
+dev-lang/mono nptl
+dev-lang/perl gdbm
+dev-lang/php apache2 bcmath cdb cgi cli ctype curl ftp gd gmp hash imap inifile json ldap memlimit mhash -mysql pcntl pcre pdo postgres posix session sharedmem simplexml snmp soap sockets spell spl sqlite sqlite3 sysvipc truetype xml xmlrpc zip
+dev-lang/python sqlite threads xml
+dev-lang/ruby ssl threads -tk -xemacs
+dev-lang/swig -R -chicken -java lua -mono -mzscheme -ocaml php -pike ruby -tcl -tk
+
+dev-libs/DirectFB -sysfs
+dev-libs/apr-util berkdb gdbm ldap -mysql postgres -sqlite sqlite3
+dev-libs/clearsilver python
+dev-libs/cyrus-sasl -berkdb -authdaemond -java -kerberos ldap -mysql -ntlm_unsupported_patch pam postgres -sample -srp ssl urandom
+dev-libs/libxml2 icu
+dev-libs/newt -gpm
+dev-libs/openssl -bindist gmp sse2 -test zlib
+dev-libs/pwlib -oss
+
+dev-php/ZendFramework minimal
+dev-php/pecl-memcached json
+
+dev-python/pycairo svg
+dev-python/pycrypto gmp
+
+dev-ruby/activerecord postgres sqlite3
+
+dev-util/catalyst doc examples
+dev-util/metro threads
+
+dev-vcs/git -bash-completion -cgi curl -cvs -doc -emacs -gtk iconv -mozsha1 perl -subversion -threads -tk -vim-syntax webdav -xinetd
+dev-vcs/subversion apache2 bash-completion berkdb dso perl python -java -kde ruby webdav-neon
+
+mail-mta/postfix ldap -pam -postgres sasl
+mail-mta/ssmtp ssl ipv6 maxsysuid md5sum
+
+media-gfx/gimp aalib curl exif -hal jpeg lcms mmx mng pdf png python smp sse svg tiff -webkit wmf
+media-gfx/imagemagick jpeg png svg tiff truetype xml
+media-gfx/sane-backends usb
+media-gfx/splashutils fbcondecor
+
+media-libs/akode -oss
+media-libs/gd jpeg png truetype xpm
+media-libs/libdca -oss
+media-libs/flac ogg
+media-libs/freetype kpathsea
+media-libs/gd fontconfig jpeg png truetype
+media-libs/imlib2 jpeg mmx mp3 png tiff
+media-libs/jasper jpeg
+media-libs/jpeg static-libs
+media-libs/lcms jpeg static-libs tiff
+media-libs/libao alsa mmap nas pulseaudio
+media-libs/libdvdread css
+media-libs/libmpeg2 sdl
+media-libs/libsndfile alsa flac sqlite
+media-libs/libtheora encode
+media-libs/netpbm jpeg png tiff xml
+media-libs/libsdl -oss
+media-libs/speex ogg sse
+media-libs/tiff jpeg zlib
+
+media-sound/abcde flac id3 lame vorbis
+media-sound/lame mmx sndfile
+media-sound/mpg123 alsa mmx -oss
+media-sound/normalize audiofile mad
+
+media-tv/mythtv aac alsa dvb dvd fftw lcd mmx opengl
+
+media-video/dirac mmx
+media-video/dvgrab jpeg
+
+net-analyzer/nagios-core
+net-analyzer/nagios-plugins ldap nagios-dns -nagios-game nagios-ping nagios-ssh -radius samba ssl snmp ups
+net-analyzer/net-snmp diskio -lm_sensors ssl -tcpd
+net-analyzer/nmap -gtk
+net-analyzer/wireshark pcre threads
+
+net-dialup/mgetty -fax
+net-dialup/slmodem -alsa -usb
+
+net-fs/netatalk cracklib cups pam ssl -tcpd
+net-fs/samba acl -ads -async -automount -caps -cups dbus kerberos ldap ldapsam pam python readline -swat syslog -winbind
+
+net-ftp/atftp pcre readline -tcpd
+net-ftp/pure-ftpd ldap vchroot
+
+net-im/ejabberd mod_irc
+net-irc/inspircd gnutls ipv6 sqlite zlib
+
+net-libs/neon expat gnutls ssl zlib
+net-libs/pjsip g711 g722 speex
+
+net-mail/courier-authlib ldap -pam
+
+net-misc/asterisk curl doc h323 mmx speex vorbis -zaptel
+net-misc/dhcpcd -compat zeroconf
+net-misc/curl gnutls ldap
+net-misc/openssh -X509 -ldap pam -tcpd
+net-misc/openvpn -iproute2 -minimal pam -passwordsave ssl -static threads
+net-misc/rsync acl iconv xattr
+net-misc/stunnel -tcpd
+net-misc/tigervnc opengl server xorgmodule
+net-misc/zaptel devfs26 rtc
+
+net-nds/openldap kerberos gnutls samba -tcpd
+
+net-print/cups acl avahi dbus gnutls jpeg png -samba tiff -zeroconf
+net-print/hpijs cups foomaticdb
+net-print/foomatic foomaticdb
+net-print/foomatic-filters cups
+net-print/foomatic-db cups
+
+net-wireless/bluez alsa usb
+net-wireless/wpa_supplicant madwifi wps
+
+sci-libs/fftw -fortran sse2 threads
+
+sys-apps/coreutils acl gmp xattr
+sys-apps/grep pcre
+sys-apps/lm_sensors sensord
+sys-apps/man lzma
+sys-apps/shadow audit craclib
+sys-apps/util-linux crypt
+sys-apps/xinetd perl -tcpd
+
+sys-auth/pambase cracklib mktemp
+
+sys-cluster/heartbeat ldirectord snmp
+
+sys-devel/gcc fortran
+sys-devel/libperl gdbm
+
+sys-fs/lvm2 -lvm1
+sys-fs/ntfs3g hal
+sys-fs/ntfsprogs crypt fuse
+sys-fs/udev extras
+
+sys-kernel/genkernel bash-completion
+
+sys-libs/glibc gd glibc-omitfp nptl nptlonly
+sys-libs/libstdc++
+sys-libs/ncurses -gpm
+sys-libs/pam cracklib
+sys-libs/slang pcre png readline
+
+sys-power/apcupsd -apache2 snmp usb
+sys-power/nut -hal usb
+sys-power/pm-utils -ntp
+
+sys-process/audit ldap
+
+www-apps/redmine fastcgi git postgres sqlite subversion
+
+www-client/links bzip2 -gpm jpeg png tiff unicode zlib
+
+www-servers/apache apache2 apache2_modules_dav
+www-servers/lighttpd bzip2 -fam fastcgi gdbm ipv6 pcre ssl ldap -lua memcache -minimal -mysql -php -rrdtool -test webdav -xattr

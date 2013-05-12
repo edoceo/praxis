@@ -1,0 +1,31 @@
+#
+# edoceo/element make.defaults
+#  @see /usr/portage/profiles/base/make.defaults
+#  Is this file additive?
+
+EMERGE_DEFAULT_OPTS="--alphabetical --nospinner --quiet-build=y"
+
+# 9/10 most popular languages
+LINGUAS="en en_GB hi es ru ar bn pt id fr"
+
+PORTAGE_RSYNC_EXTRA_OPTS="--quiet"
+
+SYNC="rsync://cdn.edoceo.com/praxis/"
+
+USE="-bash-completion -gpm"
+
+PHP_INI_VERSION="production"
+PHP_TARGETS="php5-4"
+
+# Ruby 1.9 Only
+RUBY_TARGETS="ruby19"
+
+APACHE2_MODULES="actions alias auth_basic auth_digest authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias"
+
+COLLECTD_PLUGINS="apache cpu df disk interface load memory network ntpd postgresql processes write_http"
+
+NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif fastcgi geo geoip gzip gzip_static headers_more limit_req limit_zone map memcached mp4 proxy realip referer rewrite scgi split_clients ssi upload upload_progress upstream_ip_hash userid uwsgi"
+NGINX_MODULES_MAIL="imap smtp"
+
+QEMU_SOFTMMU_TARGETS="i386 x86_64"
+QEMU_USER_TARGETS="i386 x86_64"

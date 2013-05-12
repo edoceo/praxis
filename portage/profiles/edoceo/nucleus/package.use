@@ -1,0 +1,14 @@
+#
+# Edoceo Element/Nucleus Portage Package USE Flags
+# We really try to limit features to keep size relatively small
+# :mode=shellscript:
+#
+
+# app-admin/eselect -bash-completion
+# dev-libs/apr-util -mysql -postgres
+# sys-devel/gcc -fortran
+# www-servers/lighttpd -mysql
+
+sys-libs/glibc -gd
+
+www-servers/lighttpd -mysql

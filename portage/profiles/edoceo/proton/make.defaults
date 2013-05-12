@@ -1,0 +1,12 @@
+#
+# edoceo/element make.defaults
+#  
+#  Is this file additive?
+
+EMERGE_DEFAULT_OPTS="--alphabetical --nospinner"
+
+PORTAGE_RSYNC_EXTRA_OPTS="--quiet"
+
+SYNC="rsync://cdn.edoceo.com/element/"
+
+USE="-gpm"
