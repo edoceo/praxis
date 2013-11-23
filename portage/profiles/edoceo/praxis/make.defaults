@@ -12,7 +12,7 @@ PORTAGE_RSYNC_EXTRA_OPTS="--quiet"
 
 SYNC="rsync://cdn.edoceo.com/praxis/"
 
-USE="-bash-completion -gpm"
+USE="-bash-completion -gpm theora"
 
 PHP_INI_VERSION="production"
 PHP_TARGETS="php5-4"

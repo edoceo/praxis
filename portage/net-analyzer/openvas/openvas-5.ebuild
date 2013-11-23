@@ -15,7 +15,7 @@ IUSE="X"
 DEPEND="
     >=net-analyzer/openvas-libraries-5.0.4
 	>=net-analyzer/openvas-scanner-3.3.1
-	>=net-analyzer/openvas-manager-3.0.4
+	>=net-analyzer/openvas-manager-3.0.5
 	>=net-analyzer/openvas-administrator-1.2.1
 	>=net-analyzer/openvas-cli-1.1.5
 "

@@ -13,7 +13,7 @@ app-emulation/virtualbox -headless qt4 opengl vnc
 app-text/ghostscript-gpl X cairo gtk
 app-text/poppler cairo
 
-dev-java/sun-jre-bin X alsa nsplugin odbc
+dev-java/oracle-jre-bin X alsa nsplugin
 
 gnome-extra/nm-applet -gnome
 
@@ -24,11 +24,11 @@ media-libs/freetype X kpathsea
 media-libs/gd fontconfig
 media-libs/mediastreamer video
 
-media-video/ffmpeg X
+media-video/ffmpeg X opus
 media-video/mjpegtools dga dv quicktime v4l yv12
 media-video/mplayer X dvb -oss pnm pvrspeex sse sse2 ssse3 v4l v4l2
 media-video/recordmydesktop alsa
-media-video/vlc X -a52 -aac -aalib alsa cdda cddax cddb cdio dc1394 -dirac -directfb -dts dvb dvd -esd -fbcon ffmpeg flac -fluidsynth -ggi -gnome -hal -httpd id3tag -jack -kate -libass -libcaca libgcrypt libnotify -libsysfs -libv4l2 -lirc live -lua -matroska mmx -modplug mp3 mpeg -musepack ncurses -nsplugin ogg opengl -optimisememory -pda png -pulseaudio pvr qt4 remoteosd -rtsp -run-as-root -samba -schroedinger sdl -sdl-image -seamonkey shout skins -speex sse stream -svg -svga -taglib theora truetype -twolame udev -upnp -v4l v4l2 -vcdinfo -vcdx -vlm vorbis -win32codecs x264 -xinerama xml xosd xv -zvbi
+media-video/vlc X -a52 -aac -aalib alsa cdda cddax cddb cdio dc1394 -dirac -directfb -dts dvb dvd -esd -fbcon ffmpeg flac -fluidsynth -ggi -gnome -hal httpd id3tag -jack -kate -libass -libcaca libgcrypt libnotify -libsysfs -libv4l2 -lirc live lua matroska mmx -modplug mp3 mpeg -musepack ncurses -nsplugin ogg opengl -optimisememory -pda png -pulseaudio pvr qt4 remoteosd -rtsp -run-as-root -samba -schroedinger sdl -sdl-image -seamonkey shout skins -speex sse stream -svg -svga -taglib theora truetype -twolame udev -upnp -v4l v4l2 -vcdinfo -vcdx -vlm vorbis -win32codecs x264 -xinerama xml xosd xv -zvbi
 
 net-analyzer/nmap gtk
 

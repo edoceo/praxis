@@ -24,3 +24,6 @@ net-analyzer/openvas-libraries
 net-analyzer/openvas-plugins
 net-analyzer/openvas-server
 
+# required by =sys-cluster/glusterfs-3.3.1-r2 (argument)
+=sys-cluster/glusterfs-3.3.1-r2 ~amd64
+

@@ -9,6 +9,7 @@
 app-accessibility/festival alsa
 
 app-admin/eselect -bash-completion
+app-admin/eselect-php apache2
 app-admin/sudo ldap pam
 app-admin/syslog-ng ipv6 pcre spoof-source -sql -tcpd
 app-admin/testdisk ntfs jpeg -reiserfs
@@ -32,6 +33,7 @@ app-portage/layman git subversion -test
 
 app-text/aspell -gpm
 app-text/enchant -aspell hunspell -zemberek
+app-text/ghostscript-gpl cups
 app-text/lcdf-typetools kpathsea
 app-text/poppler abiword -cairo jpeg png -qt4
 
@@ -40,7 +42,7 @@ dev-db/libpq pam pg-intdatetime readline ssl threads zlib
 dev-db/mysql berkdb big-tables cluster -max-idx-128
 # @note maybe need to not have threads on amd64?
 dev-db/postgresql ldap pam pg-heir pg-intdatetime readline ssl -threads xml zlib
-dev-db/postgresql-base ldap pam pg-heir pg-intdatetime readline ssl -threads zlib
+dev-db/postgresql-base ldap pam pg-heir pg-intdatetime python readline ssl -threads zlib
 dev-db/postgresql-server perl python uuid xml
 dev-db/sqlite extensions secure-delete soundex threadsafe
 
@@ -63,7 +65,7 @@ dev-libs/clearsilver python
 dev-libs/cyrus-sasl -berkdb -authdaemond -java -kerberos ldap -mysql -ntlm_unsupported_patch pam postgres -sample -srp ssl urandom
 dev-libs/elfutils bzip2 lzma
 dev-libs/keybinder python
-dev-libs/libxml2 icu
+dev-libs/libxml2 icu python
 dev-libs/newt -gpm
 dev-libs/openssl -bindist gmp sse2 -test zlib
 dev-libs/pwlib -oss
@@ -72,6 +74,7 @@ dev-libs/yaz -tcpd
 dev-perl/GD jpeg png xpm
 
 dev-php/pecl-apc mmap
+dev-php/memcached json session
 
 dev-php5/pecl-apc mmap
 dev-php5/ZendFramework minimal
@@ -88,7 +91,7 @@ dev-util/metro threads
 dev-vcs/git -bash-completion -cgi curl -cvs -doc -emacs -gtk iconv -mozsha1 perl -subversion threads -tk -vim-syntax webdav -xinetd
 dev-vcs/subversion apache2 -bash-completion berkdb dso -perl -python -java -kde -ruby webdav-neon
 
-mail-mta/postfix ldap -pam -postgres sasl
+mail-mta/postfix dovecot-sasl ldap -pam -postgres sasl sqlite
 mail-mta/ssmtp ssl ipv6 maxsysuid md5sum
 
 media-gfx/gimp aalib curl exif -hal jpeg lcms mmx mng pdf png python smp sse svg tiff -webkit wmf
@@ -108,19 +111,20 @@ media-libs/imlib2 jpeg mmx mp3 png tiff
 media-libs/jasper jpeg
 media-libs/jpeg static-libs
 media-libs/lcms jpeg static-libs tiff
-media-libs/libao alsa mmap nas pulseaudio
+media-libs/libao alsa mmap nas -pulseaudio
 media-libs/libdvdread css
 media-libs/libmpeg2 sdl
 media-libs/libsndfile alsa flac sqlite
 media-libs/libtheora encode
 media-libs/libquicktime ffmpeg
+media-libs/mesa gles2
 media-libs/netpbm jpeg png tiff xml
 media-libs/libsdl -oss
 media-libs/speex ogg sse
 media-libs/tiff jpeg zlib
 
 media-plugins/gst-plugins-meta ffmpeg
-media-plugins/alsa-plugins pulseaudio
+media-plugins/alsa-plugins -pulseaudio
 
 media-sound/abcde flac id3 lame vorbis
 media-sound/audacity ffmpeg
@@ -138,7 +142,7 @@ media-video/ffmpeg alsa encode faac faad gsm imlib mmx mp3 ogg -oss theora threa
 net-analyzer/nagios-core
 net-analyzer/nagios-plugins ldap nagios-dns -nagios-game nagios-ping nagios-ssh -radius samba ssl snmp ups
 net-analyzer/net-snmp diskio extensible -lm_sensors ssl -tcpd
-net-analyzer/nmap -gtk
+net-analyzer/nmap -gtk ncat ndiff
 net-analyzer/wireshark pcre threads
 
 net-dialup/mgetty -fax
@@ -171,6 +175,7 @@ net-mail/dovecot lucene managesieve mdbox sdbox sieve sqlite
 
 net-misc/asterisk curl doc h323 mmx speex vorbis -zaptel
 net-misc/dhcpcd -compat zeroconf
+net-misc/cgminer bflsc opencl scrypt
 net-misc/curl gnutls ldap threads
 net-misc/ntp -caps -opentpd samba snmp -zeroconf
 net-misc/openssh -X509 -ldap pam -tcpd
@@ -236,6 +241,7 @@ sys-process/audit ldap
 www-apps/redmine fastcgi git postgres sqlite3 subversion
 www-apps/trac postgres sqlite subversion vhosts
 
+www-client/firefox -bindist
 www-client/links bzip2 -gpm jpeg png tiff unicode zlib
 
 www-misc/awstats geoip
@@ -249,7 +255,7 @@ x11-base/xorg-server -hal sdl
 
 x11-drivers/nvidia-drivers acpi gtk
 
-x11-libs/cairo -opengl svg -X
+x11-libs/cairo X -opengl svg
 x11-libs/gtk+ jpeg tiff
 x11-libs/qt -mysql
 x11-libs/qt-core qt3support

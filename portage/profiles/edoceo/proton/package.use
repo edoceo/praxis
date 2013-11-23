@@ -87,7 +87,7 @@ media-libs/imlib2 jpeg mmx mp3 png tiff
 media-libs/jasper jpeg
 media-libs/jpeg static-libs
 media-libs/lcms jpeg static-libs tiff
-media-libs/libao alsa mmap nas pulseaudio
+media-libs/libao alsa mmap nas -pulseaudio
 media-libs/libdvdread css
 media-libs/libmpeg2 sdl
 media-libs/libsndfile alsa flac sqlite
