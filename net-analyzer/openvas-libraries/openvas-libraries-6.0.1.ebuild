@@ -1,29 +1,36 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/openvas-administrator/openvas-administrator-1.1.1.ebuild,v 1.1 2011/10/09 17:21:05 hanno Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/openvas-libraries/openvas-libraries-4.0.5.ebuild,v 1.1 2011/10/09 17:13:53 hanno Exp $
 # :mode=shellscript:
 
 EAPI=4
 
 inherit cmake-utils
 
-DESCRIPTION="A remote security scanner for Linux (openvas-administrator)"
+DESCRIPTION="A remote security scanner for Linux (openvas-libraries)"
 HOMEPAGE="http://www.openvas.org/"
-SRC_URI="http://wald.intevation.org/frs/download.php/1140/${P}.tar.gz"
+SRC_URI="http://wald.intevation.org/frs/download.php/1417/${P}.tar.gz"
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="amd64"
+KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=net-analyzer/openvas-libraries-5"
+RDEPEND=">=dev-libs/glib-2.32
+	net-libs/gnutls
+	net-libs/libpcap
+	app-crypt/gpgme
+	!net-analyzer/openvas-libnasl"
 DEPEND="${RDEPEND}
+	sys-devel/bison
+	sys-devel/flex
 	dev-util/pkgconfig
 	dev-util/cmake"
 
 # Workaround for upstream bug, it doesn't like out-of-tree builds.
 CMAKE_BUILD_DIR="${S}"
 
-src_configure() {
+src_configure()
+{
 	local mycmakeargs="-DLOCALSTATEDIR=/var -DSYSCONFDIR=/etc"
 	cmake-utils_src_configure
 }
@@ -31,10 +38,5 @@ src_configure() {
 src_install() {
 	cmake-utils_src_install
 	dodoc ChangeLog CHANGES README || die "dodoc failed"
-	doinitd "${FILESDIR}"/openvasad
-}
-
-pkg_postinst() {
-	elog "You need to create an admin user for openvasad to work:"
-	elog "openvasad -c 'add_user' -n [username] -r Admin"
+	keepdir /var/cache/openvas/
 }
