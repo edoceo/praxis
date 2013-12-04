@@ -24,8 +24,17 @@ APACHE2_MODULES="actions alias auth_basic auth_digest authn_alias authn_anon aut
 
 COLLECTD_PLUGINS="apache cpu df disk interface load memory network ntpd postgresql processes write_http"
 
-NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif fastcgi geo geoip gzip gzip_static headers_more limit_req limit_zone map memcached mp4 proxy realip referer rewrite scgi split_clients ssi upload upload_progress upstream_ip_hash userid uwsgi"
+NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif
+fastcgi geo geoip gzip gzip_static headers_more limit_req limit_zone map
+memcached mp4 proxy realip referer rewrite scgi split_clients ssi upload
+upload_progress upstream_ip_hash userid uwsgi"
+
 NGINX_MODULES_MAIL="imap smtp"
+
+# NGINX_MODULES_HTTP="perl stub_status"
+
+NGINX_MODULES_MAIL="imap smtp"
+
 
 QEMU_SOFTMMU_TARGETS="i386 x86_64"
 QEMU_USER_TARGETS="i386 x86_64"
