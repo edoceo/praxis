@@ -9,7 +9,7 @@ inherit cmake-utils
 
 DESCRIPTION="A remote security scanner for Linux (openvas-administrator)"
 HOMEPAGE="http://www.openvas.org/"
-SRC_URI="http://wald.intevation.org/frs/download.php/1319/${P}.tar.gz"
+SRC_URI="http://wald.intevation.org/frs/download.php/1442/${P}.tar.gz"
 SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS="amd64"
