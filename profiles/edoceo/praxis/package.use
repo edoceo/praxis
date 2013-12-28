@@ -217,7 +217,7 @@ sys-cluster/heartbeat ldirectord snmp
 sys-devel/gcc fortran
 sys-devel/libperl gdbm
 
-sys-fs/lvm2 -lvm1
+sys-fs/lvm2 -lvm1 -thin
 sys-fs/ntfs3g hal
 sys-fs/ntfsprogs crypt fuse
 sys-fs/udev extras
