@@ -21,7 +21,6 @@
 *sys-apps/mlocate
 *sys-apps/usbutils
 *sys-boot/syslinux
-*sys-kernel/module-rebuild
 *sys-process/fcron
 *sys-process/lsof
 *sys-process/time
