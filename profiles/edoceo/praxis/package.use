@@ -249,7 +249,7 @@ www-misc/awstats geoip
 www-plugins/adobe-flash vdpau
 
 www-servers/apache apache2 apache2_modules_dav
-www-servers/lighttpd bzip2 -fam fastcgi gdbm ipv6 pcre ssl ldap -lua memcache -minimal -mysql -php -rrdtool -test webdav -xattr
+www-servers/lighttpd bzip2 -fam fastcgi gdbm ipv6 pcre ssl ldap -lua memcache -minimal -mysql php -rrdtool -test webdav -xattr
 
 x11-base/xorg-server -hal sdl
 
