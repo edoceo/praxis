@@ -13,9 +13,9 @@ KEYWORDS="amd64 x86"
 IUSE="X"
 
 DEPEND="
-    >=net-analyzer/openvas-libraries-6.0.1
-	>=net-analyzer/openvas-scanner-3.4.0
-	>=net-analyzer/openvas-manager-4.0.4
+    >=net-analyzer/openvas-libraries-6.0.2
+	>=net-analyzer/openvas-scanner-3.4.1
+	>=net-analyzer/openvas-manager-4.0.5
 	>=net-analyzer/openvas-administrator-1.3.2
 	>=net-analyzer/openvas-cli-1.2.0
 "
