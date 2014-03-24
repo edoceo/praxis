@@ -15,7 +15,7 @@ SYNC="rsync://cdn.edoceo.com/praxis/"
 USE="-bash-completion -gpm theora"
 
 PHP_INI_VERSION="production"
-PHP_TARGETS="php5-4"
+PHP_TARGETS="php5-4 php5-5"
 
 # Ruby 1.9 Only
 RUBY_TARGETS="ruby19"
@@ -31,7 +31,9 @@ upload_progress upstream_ip_hash userid uwsgi"
 
 NGINX_MODULES_MAIL="imap smtp"
 
-# NGINX_MODULES_HTTP="perl stub_status"
+# What are these for?
+# NGINX_MODULES_HTTP="limit_conn empty_gif perl stub_status"
+# NGINX_MODULES_HTTP="access -addition auth_basic -auth_pam autoindex browser -cache_purge charset -dav -dav_ext% -degradation -echo% empty_gif* -fancyindex fastcgi -flv geo geoip -gunzip% gzip gzip_static headers_more -image_filter limit_conn* limit_req -lua map memcached -metrics% mp4 -naxsi% -perl* proxy -push -push_stream% -random_index realip referer rewrite scgi -secure_link -security% -slowfs_cache -spdy% split_clients ssi -stub_status* -sub (-upload%*) upload_progress -upstream_check% upstream_ip_hash userid uwsgi -xslt" NGINX_MODULES_MAIL="imap -pop3 smtp"
 
 NGINX_MODULES_MAIL="imap smtp"
 
