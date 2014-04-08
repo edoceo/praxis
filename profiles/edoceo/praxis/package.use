@@ -137,7 +137,7 @@ media-tv/mythtv aac alsa dvb dvd fftw lcd mmx opengl
 
 media-video/dirac mmx
 media-video/dvgrab jpeg
-media-video/ffmpeg alsa encode faac faad gsm imlib mmx mp3 ogg -oss theora threads v4l2 vorbis x264
+media-video/ffmpeg aac alsa cpudetection encode faac faad gsm imlib mmx mmxext mp3 ogg opus -oss rtmp theora threads v4l2 vorbis vpx x264
 
 net-analyzer/nagios-core
 net-analyzer/nagios-plugins ldap nagios-dns -nagios-game nagios-ping nagios-ssh -radius samba ssl snmp ups
@@ -166,6 +166,7 @@ net-irc/inspircd gnutls ipv6 sqlite zlib
 net-irc/ngircd debug -tcpd
 
 net-libs/gnutls lzo
+net-libs/libmicrohttpd messages
 net-libs/libvncserver threads
 net-libs/neon expat gnutls ssl zlib
 net-libs/pjsip g711 g722 speex
@@ -187,6 +188,8 @@ net-misc/tightvnc server -tcpd
 net-misc/zaptel devfs26 rtc
 
 net-nds/openldap kerberos gnutls samba -tcpd
+
+net-p2p/rtorrent daemon ipv6 xmlrpc
 
 net-print/cups acl avahi dbus gnutls jpeg png -samba tiff usb -zeroconf
 net-print/hpijs cups foomaticdb
