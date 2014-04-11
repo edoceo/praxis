@@ -11,7 +11,7 @@ app-accessibility/festival alsa
 app-admin/eselect -bash-completion
 app-admin/eselect-php apache2
 app-admin/sudo ldap pam
-app-admin/syslog-ng ipv6 pcre spoof-source -sql -tcpd
+app-admin/syslog-ng ipv6 json pcre spoof-source -sql -tcpd ssl
 app-admin/testdisk ntfs jpeg -reiserfs
 
 app-antivirus/clamav clamdtop
@@ -269,6 +269,8 @@ x11-libs/vte python
 
 x11-misc/slim branding screenshot
 x11-misc/x11vnc jpeq ssl zlib
+
+x11-wm/xpra clipboard rencode server vpx webp x264
 
 #
 # Virtuals
