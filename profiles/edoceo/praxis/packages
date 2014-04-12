@@ -6,7 +6,6 @@
 *app-admin/procinfo
 *app-admin/syslog-ng
 *app-arch/lzop
-*app-backup/rdiff-backup
 *app-editors/hexedit
 *app-editors/nano
 *app-portage/portage-utils

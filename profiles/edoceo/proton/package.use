@@ -15,8 +15,6 @@ app-admin/testdisk ntfs jpeg -reiserfs
 
 app-antivirus/clamav clamdtop
 
-app-backup/rdiff-backup acl xattr
-
 app-editors/nano ncurses spell
 
 app-emulation/emul-linux-x86-xlibs opengl
