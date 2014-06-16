@@ -68,7 +68,7 @@ dev-vcs/git -bash-completion -cgi curl -cvs -doc -emacs -gtk iconv -mozsha1 perl
 dev-vcs/subversion apache2 bash-completion berkdb dso perl python -java -kde ruby webdav-neon
 
 mail-mta/postfix ldap -pam -postgres sasl
-mail-mta/ssmtp ssl ipv6 maxsysuid md5sum
+mail-mta/ssmtp  gnutls ssl ipv6 maxsysuid md5sum
 
 media-gfx/gimp aalib curl exif -hal jpeg lcms mmx mng pdf png python smp sse svg tiff -webkit wmf
 media-gfx/imagemagick jpeg png svg tiff truetype xml
