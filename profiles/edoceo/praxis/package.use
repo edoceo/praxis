@@ -105,6 +105,7 @@ media-libs/flac ogg
 media-libs/freetype kpathsea
 media-libs/gd fontconfig jpeg png truetype
 media-libs/gegl ffmpeg
+media-libs/harfbuzz icu
 media-libs/imlib2 jpeg mmx mp3 png tiff
 media-libs/jasper jpeg
 media-libs/jpeg static-libs
