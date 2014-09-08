@@ -11,6 +11,3 @@
 #  /etc/portage/package.unmask file (or in a file in that directory if it is
 #  a directory). 
 
-<www-client/chromium-15
-
-=x11-drivers/nvidia-drivers-275.21
