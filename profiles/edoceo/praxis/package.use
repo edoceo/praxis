@@ -39,8 +39,8 @@ dev-db/libdbi-drivers postgres sqlite3
 dev-db/libpq pam pg-intdatetime readline ssl threads zlib
 dev-db/mysql berkdb big-tables cluster max-idx-128
 # @note maybe need to not have threads on amd64?
-dev-db/postgresql ldap pam pg-heir pg-intdatetime readline ssl -threads xml zlib
-dev-db/postgresql-base ldap pam pg-heir pg-intdatetime python readline ssl -threads zlib
+dev-db/postgresql -ldap pam pg-heir pg-intdatetime readline ssl -threads xml zlib
+dev-db/postgresql-base -ldap pam pg-heir pg-intdatetime python readline ssl -threads zlib
 dev-db/postgresql-server perl python uuid xml
 dev-db/sqlite extensions secure-delete soundex threadsafe
 
@@ -209,7 +209,7 @@ sys-apps/lm_sensors sensord
 sys-apps/man lzma
 sys-apps/pciutils -zlib
 sys-apps/shadow audit cracklib
-sys-apps/util-linux crypt
+sys-apps/util-linux crypt tty-helpers
 sys-apps/xinetd perl -tcpd
 
 sys-auth/pambase cracklib mktemp
