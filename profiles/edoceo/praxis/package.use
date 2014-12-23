@@ -49,7 +49,7 @@ dev-java/icedtea-bin -X
 dev-lang/erlang smp
 dev-lang/mono nptl
 dev-lang/perl gdbm ithreads
-dev-lang/php apache2 bcmath cdb cgi cli ctype curl enchant ftp gd gmp hash imap inifile json ldap memlimit mhash -mysql pcntl pcre pdo postgres posix session sharedmem simplexml snmp soap sockets spell spl sqlite sqlite3 sysvipc truetype xml xmlreader xmlrpc xmlwriter zip
+dev-lang/php apache2 bcmath cdb cgi cli ctype curl enchant ftp gd gmp hash imap inifile json ldap memlimit mhash mysql pcntl pcre pdo postgres posix session sharedmem simplexml snmp soap sockets spell spl sqlite sqlite3 sysvipc truetype xml xmlreader xmlrpc xmlwriter zip
 dev-lang/python sqlite threads xml
 dev-lang/ruby ssl threads -tk -xemacs
 dev-lang/spidermonkey threadsafe
