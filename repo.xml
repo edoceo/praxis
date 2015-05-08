@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories version="1.0">
-<repo priority="50" status="unofficial" status="unofficial">
+<repo priority="50" status="unofficial">
 	<name>edoceo</name>
 	<description>Edoceo profile and Packages</description>
 	<homepage>http://edoceo.com/praxis</homepage>
