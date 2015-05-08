@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" status="unofficial">
+	<name>edoceo</name>
+	<description>Edoceo profile and Packages</description>
+	<homepage>http://edoceo.com/praxisy</homepage>
+	<owner>
+		<email>edoceo@gmail.com</email>
+		<name>Edoceo, Inc</name>
+	</owner>
+	<source type="git">https://github.com/edoceo/praxis</source>
+</repo>
+</repositories>
